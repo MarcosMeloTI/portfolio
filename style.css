@@ -9,8 +9,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #ffffff;
   font-family: 'shadows into light', sans-serif;
+  color: #cacaca;
   background-color: #1b0022e0;
   overflow-x: hidden;
 }
@@ -400,6 +400,16 @@ section {
   }
 }
 
+/*seção Sobre mim */
+
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40rem;
+}
 
 
 /* Seção Tech */
@@ -412,12 +422,12 @@ section {
 
 .main-wrapper {
   width: 100%;
-  background-color: #1b0022e0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  background: rgb(235,210,253);
+  background: linear-gradient(0deg, #1b002200 0%, #1b00224b 50%, #1b0022e0 100%);
 }
 
 .text-tech {
@@ -426,7 +436,7 @@ section {
   font-weight: bold;
   font-family: 'Lato', sans-serif;
   margin-bottom: 3rem;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .container-tech {
@@ -454,6 +464,7 @@ section {
   transition : 0.3s ease-in-out;
   border-radius : 15px;
 }
+
 .container-tech .card-tech:hover {
   height : 170px;    
 }
@@ -670,29 +681,29 @@ section {
 
 .container-tech .card-tech-5 {
   position: relative;
-  max-width : 200px;
-  height : 80px;  
-  background-color : #130018;
-  margin : 30px 10px;
-  padding : 20px 15px;
+  max-width: 200px;
+  height: 80px;  
+  background-color: #130018;
+  margin: 30px 10px;
+  padding: 20px 15px;
   
-  display : flex;
-  flex-direction : column;
-  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
-  transition : 0.3s ease-in-out;
-  border-radius : 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
 }
 .container-tech .card-tech-5:hover {
-  height : 170px;    
+  height: 180px;    
 }
 
 
 .container-tech .card-tech-5 .image {
-  position : relative;
-  width : 200px;
-  height : 200px;
+  position: relative;
+  width: 200px;
+  height: 200px;
   
-  top : -60%;
+  top: -60%;
   left: 40px;
   z-index : 1;
 }
@@ -700,27 +711,26 @@ section {
 .container-tech .card-tech-5 .image img {
   width: 120px;
   height: 110px;
-  max-width : 95%;
+  max-width: 95%;
 }
 
 .container-tech .card-tech-5 .content {
-  position : relative;
-  top : -120px;
-  padding : 10px 15px;
-  color : #cacaca;
-  text-align : center;
+  position: relative;
+  top: -100px;
+  padding: 10px 15px;
+  color: #cacaca;
+  text-align: center;
   font-family: sans-serif;
   
-  visibility : hidden;
-  opacity : 0;
-  transition : 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
     
 }
 
 .container-tech .card-tech-5:hover .content {
-  margin-top : 20px;
-  visibility : visible;
-  opacity : 1;
+  visibility: visible;
+  opacity: 1;
   transition-delay: 0.2s;
   
 }
@@ -740,8 +750,6 @@ section {
   width: 100%;
   height: 40rem;
   color: #cacaca;
-  background: rgb(235,210,253);
-  background: linear-gradient(0deg, #1b002200 0%, #1b00224b 50%, #1b0022e0 100%);
 }
 
 /* Scrollbar */
@@ -772,12 +780,16 @@ section {
 /* Footer */
 
 footer {
-  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #130018;
+  background-color: #130018af;
   font-family: 'Julee', cursive;
   user-select: none;
   font-size: 18px;
+}
+
+.logo-footer{
+  height: 20vh;
+  width: 20vh;
 }
