@@ -870,6 +870,27 @@ section {
   background-color: #1b0022e0;
 }
 
+/* Back to Top */
+
+#back-to-top {
+  padding: 16px 15px 8px 15px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  border-radius: 40%;
+  border: 1px solid #c797eb;
+  font-size: 20px;
+  color: #c797eb;
+  background: #333;
+  transition: all .5s ease;
+}
+
+#back-to-top:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background: #1b0022;
+}
 
 
 /* Footer */
@@ -884,7 +905,17 @@ footer {
   font-size: 18px;
 }
 
+footer p {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo-footer{
   height: 20vh;
   width: 20vh;
+  position: relative;
+  bottom: -4px;
 }
